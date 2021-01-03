@@ -1,0 +1,8 @@
+.vs/
+.vscode/
+build/
+bin/
+train/data
+x64/
+*.pyc
+train/tmp/

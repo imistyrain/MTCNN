@@ -1,0 +1,8 @@
+set(DEMO_NAME caffe-mtcnn)
+if(MACOS)
+    add_definitions(-DCPU_ONLY)
+    add_definitions(-DUSE_ACCELERATE)
+endif()
+AUX_SOURCE_DIRECTORY(./ SRC_FILES)
+add_executable(${DEMO_NAME} ${SRC_FILES})
+target_link_libraries(${DEMO_NAME} caffe ${OpenCV_LIBS})

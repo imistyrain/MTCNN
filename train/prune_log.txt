@@ -1,0 +1,348 @@
+python Pnet_Prune.py:
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+initial test :: accuracy: 0.9431 loss: 0.0101 cls loss: 0.1560 offset loss: 0.0116
+initial test :: time cost is 163.53 s
+total model conv2D filters are:  58
+Number of iterations to prune 50.0 % filters: 3
+iter0. Ranking filters ..
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter0. Layers that will be prunned [(0, 1), (3, 1), (5, 8)]
+iter0. Prunning filters.. 
+iter0. 82.76% Filters remaining
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter0. without retrain :: accuracy: 0.8869 loss: 0.0150 cls loss: 0.2817 offset loss: 0.0156
+iter0. Fine tuning to recover from prunning iteration.. 
+Epoch 0/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9393 loss: 0.0105 cls Loss: 0.1661 offset Loss: 0.0119
+Epoch 1/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9421 loss: 0.0101 cls Loss: 0.1580 offset Loss: 0.0115
+Epoch 2/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9428 loss: 0.0100 cls Loss: 0.1560 offset Loss: 0.0114
+Epoch 3/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9436 loss: 0.0099 cls Loss: 0.1548 offset Loss: 0.0114
+Epoch 4/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9438 loss: 0.0099 cls Loss: 0.1538 offset Loss: 0.0113
+Epoch 5/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9441 loss: 0.0098 cls Loss: 0.1530 offset Loss: 0.0113
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter0. after retrain :: accuracy: 0.9447 loss: 0.0098 cls loss: 0.1515 offset loss: 0.0112
+iter0. test time cost is 81.09 s
+iter1. Ranking filters ..
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter1. Layers that will be prunned [(0, 2), (3, 4), (5, 4)]
+iter1. Prunning filters.. 
+iter1. 65.52% Filters remaining
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter1. without retrain :: accuracy: 0.8527 loss: 0.0185 cls loss: 0.3427 offset loss: 0.0194
+iter1. Fine tuning to recover from prunning iteration.. 
+Epoch 0/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9278 loss: 0.0116 cls Loss: 0.1920 offset Loss: 0.0129
+Epoch 1/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9335 loss: 0.0110 cls Loss: 0.1795 offset Loss: 0.0124
+Epoch 2/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9350 loss: 0.0109 cls Loss: 0.1763 offset Loss: 0.0123
+Epoch 3/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9355 loss: 0.0108 cls Loss: 0.1746 offset Loss: 0.0122
+Epoch 4/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9360 loss: 0.0108 cls Loss: 0.1733 offset Loss: 0.0122
+Epoch 5/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9363 loss: 0.0107 cls Loss: 0.1722 offset Loss: 0.0121
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter1. after retrain :: accuracy: 0.9367 loss: 0.0107 cls loss: 0.1713 offset loss: 0.0121
+iter1. test time cost is 81.66 s
+iter2. Ranking filters ..
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter2. Layers that will be prunned [(0, 1), (3, 1), (5, 8)]
+iter2. Prunning filters.. 
+iter2. 48.28% Filters remaining
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter2. without retrain :: accuracy: 0.8510 loss: 0.0177 cls loss: 0.3526 offset loss: 0.0177
+iter2. Fine tuning to recover from prunning iteration.. 
+Epoch 0/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9240 loss: 0.0120 cls Loss: 0.2059 offset Loss: 0.0131
+Epoch 1/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9271 loss: 0.0117 cls Loss: 0.1974 offset Loss: 0.0128
+Epoch 2/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9281 loss: 0.0115 cls Loss: 0.1947 offset Loss: 0.0128
+Epoch 3/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9287 loss: 0.0115 cls Loss: 0.1928 offset Loss: 0.0127
+Epoch 4/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9294 loss: 0.0114 cls Loss: 0.1911 offset Loss: 0.0127
+Epoch 5/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9297 loss: 0.0114 cls Loss: 0.1901 offset Loss: 0.0126
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter2. after retrain :: accuracy: 0.9304 loss: 0.0113 cls loss: 0.1891 offset loss: 0.0126
+iter2. test time cost is 81.02 s
+Finished prunning
+
+
+
+python Rnet_Prune.py
+Check the initial model accuracy
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+initial test :: accuracy: 0.9693 loss: 0.0076 cls loss: 0.0958 offset loss: 0.0094
+initial test :: time cost is 202.96 s
+total model conv2D filters are:  140
+Number of iterations to prune 50.0 % filters: 4
+iter0. Ranking filters ..
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter0. Layers that will be prunned [(0, 6), (3, 4), (6, 10)]
+iter0. Prunning filters.. 
+iter0. 85.71% Filters remaining
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter0. without retrain :: accuracy: 0.9567 loss: 0.0091 cls loss: 0.1309 offset loss: 0.0108
+iter0. Fine tuning to recover from prunning iteration.. 
+Epoch 0/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9711 loss: 0.0068 cls Loss: 0.0871 offset Loss: 0.0084
+Epoch 1/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9745 loss: 0.0064 cls Loss: 0.0778 offset Loss: 0.0081
+Epoch 2/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9757 loss: 0.0062 cls Loss: 0.0740 offset Loss: 0.0079
+Epoch 3/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9767 loss: 0.0061 cls Loss: 0.0713 offset Loss: 0.0078
+Epoch 4/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9775 loss: 0.0060 cls Loss: 0.0692 offset Loss: 0.0077
+Epoch 5/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9781 loss: 0.0059 cls Loss: 0.0675 offset Loss: 0.0077
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter0. after retrain :: accuracy: 0.9783 loss: 0.0059 cls loss: 0.0664 offset loss: 0.0076
+iter0. test time cost is 115.42 s
+iter1. Ranking filters ..
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter1. Layers that will be prunned [(0, 3), (3, 5), (6, 12)]
+iter1. Prunning filters.. 
+iter1. 71.43% Filters remaining
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter1. without retrain :: accuracy: 0.9588 loss: 0.0100 cls loss: 0.1254 offset loss: 0.0124
+iter1. Fine tuning to recover from prunning iteration.. 
+Epoch 0/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9726 loss: 0.0066 cls Loss: 0.0831 offset Loss: 0.0083
+Epoch 1/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9746 loss: 0.0064 cls Loss: 0.0773 offset Loss: 0.0081
+Epoch 2/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9754 loss: 0.0063 cls Loss: 0.0748 offset Loss: 0.0080
+Epoch 3/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9760 loss: 0.0062 cls Loss: 0.0732 offset Loss: 0.0079
+Epoch 4/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9763 loss: 0.0061 cls Loss: 0.0718 offset Loss: 0.0079
+Epoch 5/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9768 loss: 0.0061 cls Loss: 0.0707 offset Loss: 0.0078
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter1. after retrain :: accuracy: 0.9762 loss: 0.0061 cls loss: 0.0717 offset loss: 0.0077
+iter1. test time cost is 114.52 s
+iter2. Ranking filters ..
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter2. Layers that will be prunned [(0, 3), (3, 7), (6, 10)]
+iter2. Prunning filters.. 
+iter2. 57.14% Filters remaining
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter2. without retrain :: accuracy: 0.9470 loss: 0.0117 cls loss: 0.1601 offset loss: 0.0141
+iter2. Fine tuning to recover from prunning iteration.. 
+Epoch 0/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9699 loss: 0.0071 cls Loss: 0.0908 offset Loss: 0.0088
+Epoch 1/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9719 loss: 0.0068 cls Loss: 0.0843 offset Loss: 0.0085
+Epoch 2/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9728 loss: 0.0067 cls Loss: 0.0823 offset Loss: 0.0084
+Epoch 3/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9732 loss: 0.0066 cls Loss: 0.0809 offset Loss: 0.0083
+Epoch 4/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9737 loss: 0.0065 cls Loss: 0.0797 offset Loss: 0.0083
+Epoch 5/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9739 loss: 0.0065 cls Loss: 0.0786 offset Loss: 0.0082
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter2. after retrain :: accuracy: 0.9746 loss: 0.0065 cls loss: 0.0767 offset loss: 0.0082
+iter2. test time cost is 401.29 s
+iter3. Ranking filters ..
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter3. Layers that will be prunned [(0, 3), (3, 7), (6, 10)]
+iter3. Prunning filters.. 
+iter3. 42.86% Filters remaining
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter3. without retrain :: accuracy: 0.8067 loss: 0.0410 cls loss: 0.7571 offset loss: 0.0431
+iter3. Fine tuning to recover from prunning iteration.. 
+Epoch 0/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9590 loss: 0.0084 cls Loss: 0.1207 offset Loss: 0.0099
+Epoch 1/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9652 loss: 0.0076 cls Loss: 0.1038 offset Loss: 0.0092
+Epoch 2/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9663 loss: 0.0074 cls Loss: 0.1001 offset Loss: 0.0091
+Epoch 3/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9673 loss: 0.0073 cls Loss: 0.0977 offset Loss: 0.0090
+Epoch 4/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9678 loss: 0.0073 cls Loss: 0.0960 offset Loss: 0.0089
+Epoch 5/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9683 loss: 0.0072 cls Loss: 0.0947 offset Loss: 0.0088
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter3. after retrain :: accuracy: 0.9682 loss: 0.0072 cls loss: 0.0950 offset loss: 0.0088
+iter3. test time cost is 387.40 s
+Finished prunning
+
+
+
+python Onet_Prune.py 
+Check the initial model accuracy
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+initial test :: accuracy: 0.9533 loss: 0.1301 cls loss: 0.1145 offset loss: 0.0912 landmark loss: 0.0244
+initial test :: time cost is 94.25 s
+total model conv2D filters are:  288
+Number of iterations to prune 50.0 % filters: 4
+iter0. Ranking filters ..
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter0. Layers that will be prunned [(0, 6), (3, 12), (6, 4), (9, 14)]
+iter0. Prunning filters.. 
+iter0. 87.50% Filters remaining
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter0. without retrain :: accuracy: 0.8819 loss: 0.1490 cls loss: 0.2690 offset loss: 0.1082 landmark loss: 0.0263
+iter0. Fine tuning to recover from prunning iteration.. 
+Epoch 0/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9750 loss: 0.0074 cls Loss: 0.0703 offset Loss: 0.0050 landmark Loss: 0.0010
+Epoch 1/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9819 loss: 0.0058 cls Loss: 0.0529 offset Loss: 0.0044 landmark Loss: 0.0007
+Epoch 2/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9846 loss: 0.0053 cls Loss: 0.0452 offset Loss: 0.0043 landmark Loss: 0.0006
+Epoch 3/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9865 loss: 0.0051 cls Loss: 0.0392 offset Loss: 0.0042 landmark Loss: 0.0006
+Epoch 4/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9882 loss: 0.0048 cls Loss: 0.0340 offset Loss: 0.0041 landmark Loss: 0.0006
+Epoch 5/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9897 loss: 0.0047 cls Loss: 0.0301 offset Loss: 0.0040 landmark Loss: 0.0005
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter0. after retrain :: accuracy: 0.9921 loss: 0.0038 cls loss: 0.0234 offset loss: 0.0037 landmark loss: 0.0004
+iter0. test time cost is 54.80 s
+iter1. Ranking filters ..
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter1. Layers that will be prunned [(0, 6), (3, 1), (6, 7), (9, 22)]
+iter1. Prunning filters.. 
+iter1. 75.00% Filters remaining
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter1. without retrain :: accuracy: 0.9703 loss: 0.0075 cls loss: 0.0834 offset loss: 0.0050 landmark loss: 0.0009
+iter1. Fine tuning to recover from prunning iteration.. 
+Epoch 0/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9854 loss: 0.0051 cls Loss: 0.0400 offset Loss: 0.0042 landmark Loss: 0.0006
+Epoch 1/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9890 loss: 0.0048 cls Loss: 0.0317 offset Loss: 0.0041 landmark Loss: 0.0006
+Epoch 2/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9902 loss: 0.0046 cls Loss: 0.0283 offset Loss: 0.0040 landmark Loss: 0.0005
+Epoch 3/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9911 loss: 0.0045 cls Loss: 0.0251 offset Loss: 0.0040 landmark Loss: 0.0005
+Epoch 4/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9918 loss: 0.0044 cls Loss: 0.0237 offset Loss: 0.0040 landmark Loss: 0.0005
+Epoch 5/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9924 loss: 0.0044 cls Loss: 0.0213 offset Loss: 0.0039 landmark Loss: 0.0005
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter1. after retrain :: accuracy: 0.9958 loss: 0.0035 cls loss: 0.0133 offset loss: 0.0036 landmark loss: 0.0004
+iter1. test time cost is 68.18 s
+iter2. Ranking filters ..
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter2. Layers that will be prunned [(0, 2), (3, 9), (6, 2), (9, 23)]
+iter2. Prunning filters.. 
+iter2. 62.50% Filters remaining
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter2. without retrain :: accuracy: 0.9094 loss: 0.0137 cls loss: 0.3430 offset loss: 0.0064 landmark loss: 0.0010
+iter2. Fine tuning to recover from prunning iteration.. 
+Epoch 0/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9835 loss: 0.0053 cls Loss: 0.0437 offset Loss: 0.0043 landmark Loss: 0.0006
+Epoch 1/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9879 loss: 0.0049 cls Loss: 0.0329 offset Loss: 0.0042 landmark Loss: 0.0006
+Epoch 2/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9896 loss: 0.0047 cls Loss: 0.0285 offset Loss: 0.0041 landmark Loss: 0.0006
+Epoch 3/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9907 loss: 0.0046 cls Loss: 0.0256 offset Loss: 0.0041 landmark Loss: 0.0005
+Epoch 4/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9910 loss: 0.0045 cls Loss: 0.0242 offset Loss: 0.0040 landmark Loss: 0.0005
+Epoch 5/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9919 loss: 0.0045 cls Loss: 0.0220 offset Loss: 0.0040 landmark Loss: 0.0005
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter2. after retrain :: accuracy: 0.9925 loss: 0.0037 cls loss: 0.0200 offset loss: 0.0038 landmark loss: 0.0004
+iter2. test time cost is 58.19 s
+iter3. Ranking filters ..
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter3. Layers that will be prunned [(0, 5), (3, 6), (6, 8), (9, 17)]
+iter3. Prunning filters.. 
+iter3. 50.00% Filters remaining
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter3. without retrain :: accuracy: 0.8776 loss: 0.0180 cls loss: 0.4531 offset loss: 0.0067 landmark loss: 0.0016
+iter3. Fine tuning to recover from prunning iteration.. 
+Epoch 0/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9775 loss: 0.0061 cls Loss: 0.0587 offset Loss: 0.0047 landmark Loss: 0.0007
+Epoch 1/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9828 loss: 0.0055 cls Loss: 0.0459 offset Loss: 0.0045 landmark Loss: 0.0006
+Epoch 2/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9848 loss: 0.0053 cls Loss: 0.0411 offset Loss: 0.0044 landmark Loss: 0.0006
+Epoch 3/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9862 loss: 0.0052 cls Loss: 0.0373 offset Loss: 0.0043 landmark Loss: 0.0006
+Epoch 4/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9874 loss: 0.0051 cls Loss: 0.0345 offset Loss: 0.0043 landmark Loss: 0.0006
+Epoch 5/5
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+accuracy: 0.9883 loss: 0.0050 cls Loss: 0.0324 offset Loss: 0.0043 landmark Loss: 0.0006
+Progress: |██████████████████████████████████████████████████| 100.0% Complete
+iter3. after retrain :: accuracy: 0.9916 loss: 0.0041 cls loss: 0.0245 offset loss: 0.0040 landmark loss: 0.0004
+iter3. test time cost is 53.86 s
+Finished prunning
